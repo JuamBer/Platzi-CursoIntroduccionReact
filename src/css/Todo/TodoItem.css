@@ -47,15 +47,4 @@
     filter: invert(19%) sepia(77%) saturate(5459%) hue-rotate(355deg) brightness(105%) contrast(96%);
 }
 
-.svgcheck {
-    display: none;
-}
 
-.svg:hover {
-    display: none;
-    cursor: pointer;
-}
-.svg:hover ~ .svgcheck{
-    display: inline;
-    cursor: pointer;
-}

@@ -6,40 +6,62 @@ import clear_black from '../../svg/clear_black.svg';
 
 function TodoItem(props) {
 
+
     
 
-    let svg;
-    let svgcheck;
-
-    function changeCheck(status) {
-        if (status){
-
-        }else{
-
-        }
+    const onComplete = (id) =>{
+        let todo = document.getElementById(id);
+        todo.src = check_box_black;
+        alert('Ya completaste el todo '+props.text)
+    }
+    const onInComplete = (id) => {
+        let todo = document.getElementById(id);
+        todo.src = check_box_outline_blank_black;
+        alert('Ya no está completado el todo ' + props.text)
+    }
+    const onDelete = (id) => {
+        alert('Borraste el todo ' + props.text)
     }
 
-    svg = <img onMouseOver={changeCheck(true)} className="svg" src={props.completed ? check_box_black : check_box_outline_blank_black}/>;
-    svgcheck = <img onMouseOver={changeCheck(false)} className="svgcheck" src={check_box_black}/>;
+    let svg = <img
+        id={
+            props.id
+        }
+        onClick = {
+            () => {
+                props.completed ? onInComplete(props.id) : onComplete(props.id)
+            }
+        }
+        className = {
+            "svg"
+        }
+        src = {
+            props.completed ? check_box_black : check_box_outline_blank_black
+        }
+    />;
     
     
     
 
     return (
         <li className="TodoItem">
-            <span className={
+            <span 
+                className={
                     props.completed ? "Icon Icon-check--active" : "Icon Icon-check"
-                }>
+                }
+            >
                 {svg}
-                {svgcheck}
             </span>
           
             <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
                 {props.text}
             </p>
 
-            <span className = 'Icon Icon-delete' >
-                <img src={clear_black}/>
+            <span 
+                className = 'Icon Icon-delete' 
+                
+            >
+                <img src={clear_black} onClick={onDelete}/>
             </span>
         </li>
     );
