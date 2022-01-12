@@ -7,8 +7,6 @@ import clear_black from '../../svg/clear_black.svg';
 function TodoItem(props) {
 
 
-    
-
     const onComplete = (id) =>{
         let todo = document.getElementById(id);
         todo.src = check_box_black;
