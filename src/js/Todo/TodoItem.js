@@ -1,22 +1,21 @@
 import React from "react";
 import '../../css/Todo/TodoItem.css';
-import check_box_black from '../../svg/check_box_black.svg';
-import check_box_outline_blank_black from '../../svg/check_box_outline_blank_black.svg';
-import clear_black from '../../svg/clear_black.svg';
+import completedSRC from '../../svg/check_box_black.svg';
+import pendingSRC from '../../svg/check_box_outline_blank_black.svg';
+import deleteSRC from '../../svg/clear_black.svg';
 
 function TodoItem(props) {
 
 
     const onComplete = (id) =>{
-        let todo = document.getElementById(id);
-        todo.src = check_box_black;
+        console.log(props.completed);
         alert('Ya completaste el todo '+props.text)
     }
-    const onInComplete = (id) => {
-        let todo = document.getElementById(id);
-        todo.src = check_box_outline_blank_black;
-        alert('Ya no está completado el todo ' + props.text)
-    }
+    //const onInComplete = (id) => {
+    //    let HTMLtodo = document.getElementById(id);
+    //    HTMLtodo.src = check_box_outline_blank_black;
+    //    alert('Ya no está completado el todo ' + props.text)
+    //}
     const onDelete = (id) => {
         alert('Borraste el todo ' + props.text)
     }
@@ -27,14 +26,14 @@ function TodoItem(props) {
         }
         onClick = {
             () => {
-                props.completed ? onInComplete(props.id) : onComplete(props.id)
+                props.onComplete(props.id);
             }
         }
         className = {
             "svg"
         }
         src = {
-            props.completed ? check_box_black : check_box_outline_blank_black
+            props.completed ? completedSRC : pendingSRC
         }
     />;
     
@@ -59,7 +58,7 @@ function TodoItem(props) {
                 className = 'Icon Icon-delete' 
                 
             >
-                <img src={clear_black} onClick={onDelete}/>
+                <img src={deleteSRC} onClick={props.onDelete}/>
             </span>
         </li>
     );
