@@ -1,0 +1,11 @@
+*{
+    font-family: 'Ubuntu';
+}
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main .container {
+    max-width: 750px;
+}
