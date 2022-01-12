@@ -1,8 +1,8 @@
 import React from "react";
-import '../../css/Todo/TodoItem.css';
-import completedSRC from '../../svg/check_box_black.svg';
-import pendingSRC from '../../svg/check_box_outline_blank_black.svg';
-import deleteSRC from '../../svg/clear_black.svg';
+import './TodoItem.css';
+import completedSRC from '../../svg/completedSVG.svg';
+import pendingSRC from '../../svg/pendingSVG.svg';
+import deleteSRC from '../../svg/deleteSVG.svg';
 
 function TodoItem(props) {
 

@@ -1,5 +1,5 @@
 import React from "react";
-import '../../css/Todo/CreateTodoButton.css';
+import './CreateTodoButton.css';
 
 function CreateTodoButton() {
 
