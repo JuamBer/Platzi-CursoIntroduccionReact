@@ -24,6 +24,16 @@ function TodoProvider(props){
             todo.text.toLowerCase().includes(searchValue.toLowerCase())
         ));
     }
+    const addTodo = (text) => {
+        const newTodos = [...todos];
+        newTodos.push({
+            id: newTodos.length,
+            text: text,
+            completed: false
+        });
+        saveTodos(newTodos);
+    };
+
     const completeTodo = (id) => {
         const todoIndex = todos.findIndex(todo => todo.id == id);
         const newTodos = [...todos];
@@ -49,7 +59,8 @@ function TodoProvider(props){
             completeTodo,
             deleteTodo,
             openModal,
-            setOpenModal
+            setOpenModal,
+            addTodo
         }}> 
             {props.children}
         </TodoContext.Provider>
