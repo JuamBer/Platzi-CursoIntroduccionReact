@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Platzi-CursoIntroduccionReact/static/css/main.d557326f.css",
+    "main.js": "/Platzi-CursoIntroduccionReact/static/js/main.1729a01e.js",
+    "index.html": "/Platzi-CursoIntroduccionReact/index.html",
+    "static/media/completedSVG.svg": "/Platzi-CursoIntroduccionReact/static/media/completedSVG.bdf36f783d4f4e4c0d5b40023c9d2293.svg",
+    "static/media/deleteSVG.svg": "/Platzi-CursoIntroduccionReact/static/media/deleteSVG.244b66874c46718f7e0607d3acebaccf.svg",
+    "static/media/pendingSVG.svg": "/Platzi-CursoIntroduccionReact/static/media/pendingSVG.e5a9d6f82070372578801df1671c981b.svg",
+    "main.d557326f.css.map": "/Platzi-CursoIntroduccionReact/static/css/main.d557326f.css.map",
+    "main.1729a01e.js.map": "/Platzi-CursoIntroduccionReact/static/js/main.1729a01e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d557326f.css",
+    "static/js/main.1729a01e.js"
+  ]
+}
