@@ -1,7 +1,12 @@
 import React from "react";
+import { TodoContext } from "../TodoContext/TodoContext";
 import './TodoMessage.css';
 
-function TodoMessage({msg}){
+function TodoMessage(){
+
+    const {
+        msg
+    } = React.useContext(TodoContext);
 
     return ( 
         <div className="TodoMessage">

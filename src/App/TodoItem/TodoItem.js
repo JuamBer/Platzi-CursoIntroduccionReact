@@ -6,7 +6,6 @@ import deleteSRC from '../../svg/deleteSVG.svg';
 
 function TodoItem(props) {
 
-
     const onComplete = (id) =>{
         console.log(props.completed);
         alert('Ya completaste el todo '+props.text)
