@@ -1,6 +1,6 @@
 # Curso De Introducción De React.js
 
-Material realizado en el curso de "Introducción De React.js" de [Platzi]()
+Material realizado en el curso de "Introducción De React.js" de [Platzi](https://platzi.com/p/JuamBer/curso/2444-react/diploma/detalle/)
 
 ## Tecnologías 🚀
 
@@ -21,7 +21,7 @@ Material realizado en el curso de "Introducción De React.js" de [Platzi]()
 
 ## Certificación 🎓
 
-![Certificación]()
+![Certificación](https://github.com/JuamBer/Platzi-CursoIntroduccionReact/blob/master/img-licencia/diploma-react.jpg)
 
 # Getting Started with Create React App
 
